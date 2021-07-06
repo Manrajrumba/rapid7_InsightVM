@@ -1,0 +1,17 @@
+for 150 assets:;
+ram=16GB
+storage500gb(depends on how often you scan your assets and reports generation.)
+cpu=4 cores
+before installation,
+disable selinux, firewall, defender,ips/ids and assign static ip which can ping google.com
+after installation of insightvm/nexpose,
+if console did not open then,
+systemctl stop nexposeconsole
+systemctl start nexposeconsole,
+go to default installation directory in linux machine i.e.
+cd /opt/rapid7/nexpose
+run nsc.sh script to force load the console of insightvm/nexpose
+to uninstall the nexpose/insightvm 
+cd /opt/rapid7/nexpose/.install4j/ and ./uninstall
+
+note(every ip/hostname used by the insightvm/nexpose should be allowed by the network firewall)
