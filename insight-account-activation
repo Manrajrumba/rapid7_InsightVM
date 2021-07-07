@@ -1,0 +1,17 @@
+go to the administration>administor>insight plateform and cancel that activation
+then you will redirect to the same page with option of connecto to insight platform.
+then form fill up give security question , choose for your data storage(you should allow that datastore region's host name in firewall if you choose Austrilia region then you should 
+allow all the hostname related that region's database of rapid7 in your firewall)
+and you should configure your ntp server 
+case 1
+if you install insightvm in centos machine then 
+yum -y install ntp
+systemctl enable ntpd
+systemctl start ntpd
+ntpdate -u -s 0.centos.pool.ntp.org 1.centos.pool.ntp.org 2.centos.pool.ntp.org
+systemctl restart nptd
+timedatectl
+
+
+acount created and email sent to your mail address then open mail and set password with security question and login to insight platform then you will direct to paring page directly
+and then copy that key and activate your insightvm's console
