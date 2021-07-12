@@ -1,0 +1,35 @@
+### download the insight agent ###
+login to insight platform https://insight.rapid7.com
+and loging with platform account
+
+navigate to data collection management>asset management>add new>agent and select windows/linux agent
+
+then install the agent with given instruction.
+
+@@# for linux agent #@@
+systemctl status ir_agent  or service ir_agent status    ### To see the status of insight agent in linux machine
+systemctl stop ir_agent      ### To stop the insight agent in Linux machine
+systemctl start ir_agent     ### To start the insight agent in linux machine
+
+sudo cat /opt/rapid7/ir_agent/components/insight_agent/common/agent.log | grep "Agent Info" | tail -1l  ### to see the version of linux agent
+
+### Reinstall the agent###
+.<installer_extraction_dir>/agent_installer.sh reinstall
+
+.<installer_extraction_dir>/agent_installer.sh reinstall_start
+
+### Uninstall the Agent ###
+.<installer_extraction_dir>/agent_installer.sh uninstall
+
+
+
+@@# For Windows Agent #@@
+open command terminal in windows
+sc start ir_agent   ### to start agent in windows
+sc stop ir_agent    ### to stop agent in windows
+
+you can also check the status of agent with services.msc
+
+C:\Program Files\Rapid7\Insight Agent\ir_agent.exe -v     ### To check the Version of agent in Windows 
+
+
