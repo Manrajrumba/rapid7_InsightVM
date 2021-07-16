@@ -15,3 +15,12 @@ timedatectl
 
 acount created and email sent to your mail address then open mail and set password with security question and login to insight platform then you will direct to paring page directly
 and then copy that key and activate your insightvm's console
+
+
+
+
+
+
+### How to disable and delete platform account and disassociate from insightvm product. ###
+loging to insight.rapid7.com
+navigate to settings>user management>company setting>delete this account
